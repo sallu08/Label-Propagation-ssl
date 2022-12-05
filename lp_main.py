@@ -1,11 +1,10 @@
 import tensorflow as tf
 import numpy as np
-from mnist_get_data import *
+from mnist_get_data import get_data
 import keras
 import scipy
 from scipy.spatial.distance import pdist, squareform
 from sklearn import preprocessing
-from sklearn.utils import class_weight
 from sklearn.utils.class_weight import compute_class_weight
 
 x_train,y_train,x_test,y_test,label_index,x_train_labeled,y_train_labeled = get_data(no_of_samples=10) #10 samples for each class
